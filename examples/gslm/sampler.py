@@ -86,4 +86,8 @@ class UnitLanguageModelSampler(GeneratorHubInterface):
             sample_break_mode="eos",
             **kwargs,
         )
+        print(x["args"])
+        print(x["task"])
+        print(x["models"])
+        assert False, "Debugging"
         return cls(x["args"], x["task"], x["models"])
